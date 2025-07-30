@@ -9,7 +9,7 @@
 # 5. check if the push was successful
 
 # 1. Stage all changes
-git stage .
+git add .
 
 # 2. Commit changes with message 'Staged changes Updated'
 git commit -m "Staged changes Updated"
@@ -19,13 +19,6 @@ git pull origin main
 
 # 4. Push changes to remote repository on branch 'main'
 git push origin main
-
-# 5. Check if the push was successful
-if [ $? -eq 0 ]; then
-  echo "Push successful"
-else
-  echo "Push failed"
-fi
 
 # Echo a message that the script is complete
 echo "Synchronization complete"
