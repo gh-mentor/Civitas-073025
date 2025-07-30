@@ -62,6 +62,8 @@ namespace Models
             get => _hourlyRate;
             set
             {
+
+                // TODO
                 if (value < 0)
                     throw new ArgumentOutOfRangeException(nameof(value), "Hourly rate cannot be negative.");
                 _hourlyRate = value;
